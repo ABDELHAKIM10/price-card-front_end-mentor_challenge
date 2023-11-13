@@ -36,50 +36,44 @@ body {
 #top-section h4 {
   color: #c0df34;
   margin-bottom: 10px;
+  height: auto;
 }
 #top-section p {
   color: #98a6bd;
   font-size: 0.8rem;
 }
 #bottom-section {
-  height: 65%;
-  width: 100% ; 
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: px;
 }
 #left-section {
-  height: auto;
-  width: 100%;
+  flex-basis: 50%;
   background-color: #2ab2af;
-  display: inline-block;
-  vertical-align: top;
   padding: 25px;
-  position: relative;
 }
 #right-section {
-  height: auto;
-  width: 100%;
+  flex-basis: 50%;
   background-color: #32D0CD;
-  display: inline-block;
-  vertical-align: top;
   padding: 25px;
-  position: relative;
 }
-.price ,.frequancy {
-  display: inline-block;
+#price-container {
+  display: flex;
+  flex-direction: ;
+  align-items: center;
+}
 }
 #left-section h4 {
   margin-bottom: 10px;
 }
 .price {
   font-size: 1.8rem;
-  margin-bottom: 0px;
 }
 .frequancy {
-  position: relative;
-  top: -3px;
   font-size: 0.8rem;
   opacity: 0.7;
+  margin-left: 5px;
 }
 .last-p{
   font-size: 0.8rem;
@@ -115,8 +109,8 @@ button:hover {
     height: 350px;
     width: 500px;
   }
-  #left-section, #right-section {
-    width: 50%;
-    height: 100%;
+  #bottom-section {
+    flex-direction: row;
+    height: 60%
   }
 }
